@@ -1,0 +1,29 @@
+section.offer {
+    background: var(--color-bg1);
+    box-shadow: inset 0 0 3rem rgba(0, 0, 0, 0.2);
+}
+
+div.offer__containers {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 2rem;
+}
+
+.offers {
+    background-color: var(--color-bg);
+    text-align: center;
+    padding: 10px;
+    transition: var(--transition);
+}
+
+.offers:hover {
+    background: transparent;
+    border: 2px solid var(--color-bg);
+}
+
+@media screen and (max-width:600px) {
+    div.offer__containers {
+        grid-template-columns: 1fr;
+    }
+}

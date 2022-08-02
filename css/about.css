@@ -1,0 +1,206 @@
+section.achievements {
+    background: var(--color-bg1);
+    box-shadow: inset 0 0 3rem rgba(0, 0, 0, 0.5);
+}
+
+div.achievements__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 2rem;
+}
+
+div.achievements__right h2 {
+    text-align: left;
+}
+
+div.achievements__cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    align-items: center;
+}
+
+
+
+div.achievement__image {
+    /* border: 2px solid red; */
+    height: 150px;
+    padding: 10px;
+}
+
+article.achievement__card:hover {
+    border: 2px solid var(--color-bg);
+    background: transparent;
+    transition: var(--transition);
+}
+
+article.achievement__card {
+    background: var(--color-bg);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+
+
+
+/* team */
+.team {
+    background: var(--color-bg);
+    /* box-shadow: inset 0 3rem 3rem rgba(0, 0, 0, 0.5); */
+}
+
+.team__container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+
+.team__member {
+    background: var(--color-warning);
+    padding: 2rem;
+    border: 1px solid transparent;
+    position: relative;
+    transition: var(--transition);
+    overflow: hidden;
+}
+
+.team__member:hover {
+    background: transparent;
+    border-color: var(--color-primary);
+}
+
+.team__member-image img {
+    filter: saturate(0);
+}
+
+.team__member:hover img {
+    filter: saturate(1);
+}
+
+.team__member-info * {
+    text-align: center;
+    margin-top: 1.4rem;
+}
+
+.team__member-info p {
+    color: black;
+}
+
+.team__member-socials {
+    position: absolute;
+    top: 50%;
+    display: flex;
+    transform: translateY(-50%);
+    flex-direction: column;
+    right: -100%;
+    background: var(--color-primary);
+    border-radius: 1rem 0 0 1rem;
+    box-shadow: -2rem 0 2rem rgba(0, 0, 0, 0.3);
+    transition: var(--transition);
+}
+
+.team__member-socials a {
+    padding: 1rem;
+    font-size: 1.3rem;
+}
+
+.team__member:hover .team__member-socials {
+    right: 0;
+}
+
+
+
+
+
+/* ======testimonial==== */
+.testimonials__container {
+    overflow-x: hidden;
+    position: relative;
+    margin-bottom: 5rem;
+    background: var(--color-bg1);
+}
+
+.testimonial {
+    padding-top: 2rem;
+}
+
+.avatar {
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto 1rem;
+    border: 1px solid var(--color-bg2);
+}
+
+.testimonial__info {
+    text-align: center;
+}
+
+.testimonial__body {
+    background: var(--color-primary);
+    padding: 2rem;
+    margin-top: 2rem;
+    position: relative;
+}
+
+.testimonial__body::before {
+    content: "";
+    display: block;
+    background: linear-gradient(135deg,
+            transparent,
+            var(--color-primary),
+            var(--color-primary));
+    width: 3rem;
+    height: 3rem;
+    position: absolute;
+    top: -1.5rem;
+    left: 50%;
+    transform: rotate(45deg);
+
+}
+
+
+@media screen and (max-width:1024px) {
+    .team__container {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+    }
+
+    .team__member {
+        padding: 1rem;
+    }
+
+    div.achievements__container {
+        grid-template-columns: 1fr;
+    }
+
+    div.achievements__left {
+        order: 2;
+    }
+
+    div.achievement__image {
+        height: auto;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .team__container {
+        grid-template-columns: 1fr;
+        gap: 0.7rem;
+    }
+
+    .team__member {
+        padding: 0;
+    }
+
+    .team__member p {
+        margin-bottom: 1.5rem;
+    }
+
+    /* testimonial */
+    .testimonial__body {
+        padding: 1.2rem;
+    }
+}
