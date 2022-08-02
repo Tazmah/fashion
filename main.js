@@ -45,7 +45,6 @@ faqs.forEach(faq => {
 });
 
 
-
 // aos
 
 const sr = ScrollReveal({
@@ -53,19 +52,19 @@ const sr = ScrollReveal({
     duration: 2500,
     reset: true
 });
-sr.reveal(".header__left", { delay: 200, origin: "right", distance: "100%" });
+sr.reveal(".header__left", { delay: 200, origin: "top", distance: "100%" });
 
-sr.reveal(".header__right", { delay: 200, origin: "left", distance: "100%" });
-sr.reveal(".discover__left", { delay: 200, origin: "left", distance: "100%" });
+sr.reveal(".header__right", { delay: 200, origin: "bottom", distance: "100%" });
 
-sr.reveal(".discover__right", { delay: 200, origin: "right", distance: "100%" });
+sr.reveal(".discover__left", { delay: 200, origin: "bottom", distance: "100%" });
+
+sr.reveal(".discover__right", { delay: 200, origin: "top", distance: "100%" });
 
 sr.reveal(".banner", { delay: 200, origin: "bottom", distance: "100%" });
 
-sr.reveal(".offers", { delay: 200, origin: "left", distance: "100%" });
+sr.reveal(".offers", { delay: 200, origin: "top", distance: "100%" });
 
 sr.reveal("footer", { delay: 200, origin: "bottom", distance: "100%" });
-
 
 
 
