@@ -81,7 +81,7 @@ textarea {
     width: 100%;
     padding: 1rem;
     background: var(--color-bg);
-    color: var(--color-white);
+    color: black;
 }
 
 .contact__form .btn {
