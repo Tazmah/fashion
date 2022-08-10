@@ -1,0 +1,82 @@
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+section.requests {
+    background: var(--color-bg);
+    position: relative;
+}
+
+.bodyScroll {
+    background: var(--color-warning);
+}
+
+.ex {
+    cursor: pointer;
+    font-size: 2rem;
+    border-radius: 50%;
+    background: var(--color-bg);
+    display: none;
+}
+
+div.female__input,
+div.male__input {
+    display: flex;
+    flex-direction: column;
+}
+
+div.female__input input,
+div.male__input input {
+    margin: 10px 0;
+    padding: 10px;
+}
+
+.female__request,
+.male__request {
+    display: none;
+    transition: var(--transition);
+}
+
+.on {
+    display: block;
+}
+
+.off {
+    display: none;
+}
+
+div.requests__containers {
+    position: relative;
+    min-height: 30vh;
+}
+
+div.choose {
+    position: absolute;
+    bottom: 0;
+    /* top: 50%; */
+    left: 50%;
+    transform: translateX(-50%);
+    /* transform: translate(-50%, -50%); */
+    display: block;
+    display: flex;
+    gap: 0.5rem;
+}
+div.instruction p span{
+    background: var(--color-warning);
+    text-transform: capitalize;
+}
+div.instruction p {
+    text-align: center;
+}
+div.choose .btn{
+    background: white;
+    font-weight: 700;
+    cursor: pointer;
+    transition: var(--transition);
+}
+div.choose .btn:hover{
+    color: black;
+    border: 2px solid var(--color-warning);
+}

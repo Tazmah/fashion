@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion Website</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- ICONS COUNT CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- GOOGLE FONT -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- swiper js -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+</head>
+
+<body>
+    <div class="socials__aside">
+        <ul>
+            <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+        </ul>
+    </div>
+    <a href="" class="scroll"><i class="fas fa-arrow-up"></i></a>
+    <nav>
+        <div class="container nav__container">
+            <a href="index.html">
+                <h4>Fashion</h4>
+            </a>
+            <ul class="nav__menu">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="request.html" class="btn">Make A Request</a></li>
+            </ul>
+            <button id="open-menu-btn"><i class="fas fa-bars"></i></button>
+            <button id="close-menu-btn"><i class="fas fa-x"></i></button>
+        </div>
+    </nav>
+    <header>
+        <div class="container header__container">
+            <div class="header__left">
+                <h1>
+                    Display your personality with style
+                </h1>
+                <p>
+                    Our
+                    skilled master tailors handle all of our cutting and sewing, ensuring precision in all production
+                    processes and paying attention to the details. Come to us and choose the best clothing for your
+                    personality.
+                </p>
+                <a href="contact.html" class="btn ">Contact Us</a>
+            </div>
+            <div class="header__right">
+                <img src="img/shirt.jpg" alt="">
+            </div>
+        </div>
+    </header>
+    <section class="discover">
+        <div class="container discover__container">
+            <div class="discover__left">
+                <img src="img/discover.webp" alt="">
+            </div>
+            <div class="discover__right">
+                <h2>DISCOVER TRUE QUALITY</h2>
+                <p>We provide you with great clothes that befit you and your lifestyle. Our clothes are made from the
+                    highest quality fabrics and guaranteed to give you functionality, durability and comfort. </p>
+                <a href="about.html" class="btn-primary ">Learn About us</a>
+            </div>
+        </div>
+    </section>
+    <section class="banner">
+        <div class="container banner__container">
+            <div class="banner__left">
+                <h2>Your Design We Deliver Providing You with Maximum of comfort and confidence in every wear</h2>
+            </div>
+            <div class="banner__right">
+                <a href="request.html" class="btn-primary">Make A Request</a>
+            </div>
+        </div>
+    </section>
+    <section class="ready">
+        <h2>Ready To Wear</h2>
+        <div class="container ready__container">
+            <article class="readies" data-price="#12,500" data-name="Man In Blue" data-available="Avalable for size 12-16" data-src="img/ready2.jpg">
+                <div class="wear">
+                    <div class="image__wear">
+                        <img src="img/ready2.jpg" alt="">
+                    </div>
+                    <div class="wear__info">
+                        <p>Man In Blue</p>
+                        <p>THis is a clothe available for sale in size 14-16</p>
+                        <p><b>#12,500</b></p><br>
+                        <a class="btn-primary" >Buy Now</a>
+                    </div>
+                </div>
+            </article>
+            <article class="readies" data-price="#10,000" data-name="Asoebi" data-available="Avalable for size 12-16" data-src="img/ready1.jpg">
+                <div class="wear">
+                    <div class="image__wear">
+                        <img src="img/ready1.jpg" alt="">
+                    </div>
+                    <div class="wear__info">
+                        <p>Man In Red</p>
+                        <p>THis is a clothe available for sale in size 14-16</p>
+                        <p><b>#12000</b></p><br>
+                        <a class="btn-primary" >Buy Now</a>
+                    </div>
+                </div>
+            </article>
+            <article class="readies" data-price="#10,000" data-name="Asoebi" data-available="Avalable for size 12-16" data-src="img/asoebi1.jpg">
+                <div class="wear">
+                    <div class="image__wear">
+                        <img src="img/asoebi1.jpg" alt="">
+                    </div>
+                    <div class="wear__info">
+                        <p>Man In Red</p>
+                        <p>THis is a clothe available for sale in size 14-16</p>
+                        <p><b>#12000</b></p><br>
+                        <a class="btn-primary" >Buy Now</a>
+                    </div>
+                    
+                </div>
+            </article>
+            <article class="readies" data-price="#10,000" data-name="Asoebi" data-available="Avalable for size 12-16" data-src="img/asoebi2.jpg">
+                <div class="wear">
+                    <div class="image__wear">
+                        <img src="img/asoebi2.jpg" alt="">
+                    </div>
+                    <div class="wear__info">
+                        <p>Man In Red</p>
+                        <p>THis is a clothe available for sale in size 14-16</p>
+                        <p><b>#12000</b></p><br>
+                        <a class="btn-primary" >Buy Now</a>
+                    </div>
+                </div>
+            </article>
+        </div>
+        <div class="popup">
+            <i id="close">X</i>
+            <div class="data">
+                
+            </div>
+            <div class="payment__ways">
+                <div class="pay">
+                    Pay Now
+                </div>
+                <div class="pay">
+                    Pay On Delivery
+                </div>
+                <div class="pay">
+                    Pay With Transfer
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="faqs">
+        <h2>Frequently Asked Questions</h2>
+        <div class="container faqs__container">
+
+            <article class="faq">
+                <div class="faq__icon"><i class="uil uil-plus"></i></div>
+                <div class="question__answer">
+                    <h4>How do i know the right courses for me?</h4>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor quas incidunt ipsam? Dolorem
+                        earum eveniet quis totam ex animi soluta, enim consequuntur praesentium, nulla maiores magnam
+                        consequatur expedita ducimus exercitationem!
+                    </p>
+                </div>
+            </article>
+
+            <article class="faq">
+                <div class="faq__icon"><i class="uil uil-plus"></i></div>
+                <div class="question__answer">
+                    <h4>How do i know the right courses for me?</h4>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor quas incidunt ipsam? Dolorem
+                        earum eveniet quis totam ex animi soluta, enim consequuntur praesentium, nulla maiores magnam
+                        consequatur expedita ducimus exercitationem!
+                    </p>
+                </div>
+            </article>
+
+            <article class="faq">
+                <div class="faq__icon"><i class="uil uil-plus"></i></div>
+                <div class="question__answer">
+                    <h4>How do i know the right courses for me?</h4>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor quas incidunt ipsam? Dolorem
+                        earum eveniet quis totam ex animi soluta, enim consequuntur praesentium, nulla maiores magnam
+                        consequatur expedita ducimus exercitationem!
+                    </p>
+                </div>
+            </article>
+
+            <article class="faq">
+                <div class="faq__icon"><i class="uil uil-plus"></i></div>
+                <div class="question__answer">
+                    <h4>How do i know the right courses for me?</h4>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor quas incidunt ipsam? Dolorem
+                        earum eveniet quis totam ex animi soluta, enim consequuntur praesentium, nulla maiores magnam
+                        consequatur expedita ducimus exercitationem!
+                    </p>
+                </div>
+            </article>
+
+            <article class="faq">
+                <div class="faq__icon"><i class="uil uil-plus"></i></div>
+                <div class="question__answer">
+                    <h4>How do i know the right courses for me?</h4>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor quas incidunt ipsam? Dolorem
+                        earum eveniet quis totam ex animi soluta, enim consequuntur praesentium, nulla maiores magnam
+                        consequatur expedita ducimus exercitationem!
+                    </p>
+                </div>
+            </article>
+
+            <article class="faq">
+                <div class="faq__icon"><i class="uil uil-plus"></i></div>
+                <div class="question__answer">
+                    <h4>How do i know the right courses for me?</h4>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor quas incidunt ipsam? Dolorem
+                        earum eveniet quis totam ex animi soluta, enim consequuntur praesentium, nulla maiores magnam
+                        consequatur expedita ducimus exercitationem!
+                    </p>
+                </div>
+            </article>
+
+            <article class="faq">
+                <div class="faq__icon"><i class="uil uil-plus"></i></div>
+                <div class="question__answer">
+                    <h4>How do i know the right courses for me?</h4>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor quas incidunt ipsam? Dolorem
+                        earum eveniet quis totam ex animi soluta, enim consequuntur praesentium, nulla maiores magnam
+                        consequatur expedita ducimus exercitationem!
+                    </p>
+                </div>
+            </article>
+
+            <article class="faq">
+                <div class="faq__icon"><i class="uil uil-plus"></i></div>
+                <div class="question__answer">
+                    <h4>How do i know the right courses for me?</h4>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor quas incidunt ipsam? Dolorem
+                        earum eveniet quis totam ex animi soluta, enim consequuntur praesentium, nulla maiores magnam
+                        consequatur expedita ducimus exercitationem!
+                    </p>
+                </div>
+            </article>
+
+            <article class="faq">
+                <div class="faq__icon"><i class="uil uil-plus"></i></div>
+                <div class="question__answer">
+                    <h4>How do i know the right courses for me?</h4>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor quas incidunt ipsam? Dolorem
+                        earum eveniet quis totam ex animi soluta, enim consequuntur praesentium, nulla maiores magnam
+                        consequatur expedita ducimus exercitationem!
+                    </p>
+                </div>
+            </article>
+
+            <article class="faq">
+                <div class="faq__icon"><i class="uil uil-plus"></i></div>
+                <div class="question__answer">
+                    <h4>How do i know the right courses for me?</h4>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor quas incidunt ipsam? Dolorem
+                        earum eveniet quis totam ex animi soluta, enim consequuntur praesentium, nulla maiores magnam
+                        consequatur expedita ducimus exercitationem!
+                    </p>
+                </div>
+            </article>
+        </div>
+    </section>
+
+
+
+
+    <!-- footer -->
+
+
+    <!-- footer -->
+    <footer>
+        <div class="container footer__container">
+            <div class="footer__1">
+                <a href="index.html">
+                    <h4>Fashion</h4>
+                </a>
+                <p>
+                    Portray Your personality with style.
+                </p>
+            </div>
+            <div class="footer__2">
+                <h4>Permalinks</h4>
+                <ul class="permalinks">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="service.html">Service</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="request.html">Request</a></li>
+                </ul>
+            </div>
+            <div class="footer__3">
+                <h4>Privacy</h4>
+                <ul class="privacy">
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms and conditio</a></li>
+                    <li><a href="#">Refund Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer__4">
+                <h4>Contact us</h4>
+                <div>
+                    <p>+01 234 567 8910</p>
+                    <p>shakir256@gmail.con</p>
+                </div>
+                <ul class="footer__socials">
+                    <li>
+                        <a href="#"><i class="uil uil-facebook-f"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="uil uil-instagram-alt"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="uil uil-twitter"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="uil uil-linkedin-alt"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__copyright">
+            <small>Copyright &copy; Abdul muizz</small>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- swiper script -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
